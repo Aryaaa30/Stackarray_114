@@ -54,4 +54,12 @@ public:
 
 };	
 
+int main() {
+	StackArray s;
+	while (true) {
+		cout << endl;
+		cout << "\n***Stack Menu***\n";
+	}
+
+
 
