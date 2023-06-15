@@ -66,7 +66,33 @@ int main() {
 		cout << "\nEnter your choise : ";
 		string input;
 		getline(cin, input);
+		char ch = (input.empty() ? '0' : input[0]);
+		switch (ch) {
+		case '1': {
+			cout << "\nEnter a element :";
+			string element;
+			getline(cin, element);
+			s.push(element);
+			break;
+		}
+		case '2':
+			if (s.empty()) {
+				cout << "\nStack is empty." << endl;
+				break;
+			}
+			s.pop();
+			break;
+		case '3':
+			s.display();
+			break;
+		case '4':
+			return 0;
+		default:
+			cout << "\nInvalid choise." << endl;
+			break;
+		}
 	}
+}
 
 
 
